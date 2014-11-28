@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 	srand(time(NULL));
 	
 	system("clear");
-
+	printf("Productor: Coge un elemento aleatorio del vector. Si este es par, lo incrementa, si es impar, lo decrementa.\nConsumidor: Coge un elemento aleatorio del vector. Si este es par, lo decrementa, si es impar, lo incrementa.\n\n");
 	if(pthread_mutex_init(&lock,NULL)) //Inicio el lock con control de error.
 	{
 		printf("\e[1;33mError asignando el MUTEX_INIT\n");
