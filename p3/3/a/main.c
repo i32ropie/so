@@ -41,10 +41,9 @@ int main(int argc, char const *argv[])
 			printf("\e[1;33mError creando la hebra %d\n",i+1);
 			exit(EXIT_FAILURE);
 		}
-		usleep(500000);
+		usleep(500);
 	}
 	printf("\033[1;33mTODAS LAS HEBRAS CREADAS Y EJECUTADAS.\033[0m\n");
-	sleep(1);
 	muestraCritico();
 	for(i=0 ; i<atoi(argv[1]) ; i++)
 	{
